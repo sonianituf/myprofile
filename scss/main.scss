@@ -1,0 +1,114 @@
+@import 'variables',
+        'mixins';
+
+
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family:'Playfair Display', serif;
+    margin: 0 auto;
+  }
+  h1 {
+    color:$text-color;
+  }
+  h2 {
+    color:$text-color;
+  }
+  p{
+    color:$text-color;
+  }
+ .main {
+   margin:5px;
+ }
+  .main-header {
+    // display: flex;
+    height: 300px;
+    background-color:green;
+    background-image: url('../img/clouds.png');   
+    background-size: cover;
+    position: relative;
+  }
+  .about-header {
+    background-image: url('../img/panorama.png');
+  }
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  .profile-img {
+    border: solid 2px $border-color;
+    border-radius: 45%;
+    box-shadow: -8px 3px 8px 4px $border-shadow;
+    height: 100px;
+    width: 100px;
+    transition:all 1s;
+    ;
+    }
+  .profile-img:hover {
+  transform: scale(1.2);
+  }
+  a {
+    color:$white;
+    text-decoration: none;
+    
+    }
+  a:hover {
+    color: $white;
+  }
+  li {
+    list-style: none;
+    padding: 1px 0;
+    margin: 1px 0;
+    display: inline-block;
+    text-align: center;
+  }
+  .main-nav ul {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-around;
+    // flex-wrap: nowrap;
+    width: 100%;
+    padding-top: 10px;
+    margin-left: -20px;
+  }
+  
+  figure h2 {
+    letter-spacing: 1px;
+    transition: letter-spacing 1s;
+  }
+  figure h2:hover {
+    letter-spacing: .5em;
+  }
+  .intro,
+  .card {
+    // border:solid 2px grey; 
+    padding: 0 10px 0 15px;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  .main-content {
+    display:flex;
+    flex-direction: column;
+  }
+  footer {
+    text-align: center;
+  }
+  h5 a {
+    color: green;
+    &:hover {
+      color: blue;
+    }
+  }
+  @media(min-width: 768px){
+    .main-content {
+      flex-direction: row;
+    }
+    .intro,
+    .card {
+      width: 45%;
+      margin: 0 auto;
+    }
+  }

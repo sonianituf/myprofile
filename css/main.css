@@ -1,0 +1,151 @@
+/* ---- color */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #000000;
+}
+
+h2 {
+  color: #000000;
+}
+
+p {
+  color: #000000;
+}
+
+.main {
+  margin: 5px;
+}
+
+.main-header {
+  height: 300px;
+  background-color: green;
+  background-image: url("../img/clouds.png");
+  background-size: cover;
+  position: relative;
+}
+
+.about-header {
+  background-image: url("../img/panorama.png");
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile-img {
+  border: solid 2px #80bfff;
+  border-radius: 45%;
+  -webkit-box-shadow: -8px 3px 8px 4px #99ffff;
+          box-shadow: -8px 3px 8px 4px #99ffff;
+  height: 100px;
+  width: 100px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.profile-img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+}
+
+li {
+  list-style: none;
+  padding: 1px 0;
+  margin: 1px 0;
+  display: inline-block;
+  text-align: center;
+}
+
+.main-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding-top: 10px;
+  margin-left: -20px;
+}
+
+figure h2 {
+  letter-spacing: 1px;
+  -webkit-transition: letter-spacing 1s;
+  transition: letter-spacing 1s;
+}
+
+figure h2:hover {
+  letter-spacing: .5em;
+}
+
+.intro,
+.card {
+  padding: 0 10px 0 15px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer {
+  text-align: center;
+}
+
+h5 a {
+  color: green;
+}
+
+h5 a:hover {
+  color: blue;
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .intro,
+  .card {
+    width: 45%;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=main.css.map */
