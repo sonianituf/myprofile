@@ -21,7 +21,8 @@
  .main {
    margin:5px;
  }
-  .main-header {
+  .main-header,
+  .about-header {
     // display: flex;
     height: 300px;
     background-color:green;
@@ -29,9 +30,9 @@
     background-size: cover;
     position: relative;
   }
-  .about-header {
-    background-image: url('../img/panorama.png');
-  }
+  // .about-header {
+  //   background-image: url('../img/panorama.png');
+  // }
 .banner {
   display: flex;
   flex-direction: column;
